@@ -77,6 +77,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    authentication-zero (3.0.2)
     base64 (0.2.0)
     bigdecimal (3.1.4)
     bindex (0.8.1)
@@ -103,10 +104,14 @@ GEM
       ruby2_keywords
     error_highlight (0.5.1)
     erubi (1.12.0)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.2)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     importmap-rails (1.2.3)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -128,6 +133,7 @@ GEM
       net-smtp
     marcel (1.0.2)
     matrix (0.4.2)
+    mini_magick (4.12.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
     msgpack (1.7.2)
@@ -199,6 +205,8 @@ GEM
     reline (0.4.0)
       io-console (~> 0.5)
     rexml (3.2.6)
+    ruby-vips (2.2.0)
+      ffi (~> 1.12)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.15.0)
@@ -249,10 +257,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  authentication-zero (~> 3.0)
   bootsnap
   capybara
   debug
   error_highlight (>= 0.4.0)
+  image_processing (~> 1.2)
   importmap-rails
   jbuilder
   pg (~> 1.1)
