@@ -78,7 +78,6 @@ GEM
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
-    authentication-zero (3.0.2)
     base64 (0.2.0)
     bcrypt (3.1.18)
     bigdecimal (3.1.4)
@@ -281,7 +280,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  authentication-zero (~> 3.0)
   bcrypt (~> 3.1.7)
   bootsnap
   capybara
